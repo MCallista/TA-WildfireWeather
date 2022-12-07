@@ -48,7 +48,7 @@ def hsMVis2(month, year):
         st.code('Tidak ada data pada bulan tersebut')
     else:
         bbox = (94.241, 108.809, -6.404, 6.513)
-        mapbg = plt.imread('map.png')
+        mapbg = plt.imread('Visualization/map.png')
         fig, ax = plt.subplots(figsize = (8,7))
         ax.scatter(plotMVis.Longitude, plotMVis.Latitude, zorder=1, alpha= 0.2, c='b', s=10)
         ax.set_title('Lokasi Kebakaran Hutan dan Lahan', )
