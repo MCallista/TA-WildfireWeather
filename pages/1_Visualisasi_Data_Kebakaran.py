@@ -7,6 +7,7 @@ import seaborn as sns
 
 #Datas
 
+hotSpot = pd.read_csv('Visualization/hotSpot.csv', index_col=[0])
 hsPlot = pd.read_csv('Visualization/hsPlot.csv', index_col=[0])
 hsPlotD = pd.read_csv('Visualization/hsPlotD.csv', index_col=[0])
 
