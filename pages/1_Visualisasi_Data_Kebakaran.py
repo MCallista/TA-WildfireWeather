@@ -25,6 +25,15 @@ def hsDbar(colName):
 
     st.pyplot(fig)
     
+def hsDbar2():
+
+    plotBarh = hotSpot.copy()
+
+    fig = plt.figure(figsize=(10, 5))
+    sns.countplot(y = 'Provinsi', data = plotBarh)
+
+    st.pyplot(fig)
+    
 def hsMVis1():
 
     bbox = (94.241, 108.809, -6.404, 6.513)
@@ -120,3 +129,7 @@ if st.button('Generate Plot', key = 'hsMVis2'):
     hsMVis2(sortByT2, sortByT3)
 else:
     st.code('Tekan tombol untuk menampilkan plot (Data tersedia April 2016 - Desember 2020)')
+
+st.markdown('####')
+st.markdown('**Horizontal Bar Plot untuk jumlah kebakaran terhadap provinsi kejadian**')
+hsDbar2()
