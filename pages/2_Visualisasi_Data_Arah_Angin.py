@@ -49,3 +49,5 @@ if st.button('Generate Plot', key = 'hsMVisWD'):
     hsMVisWD(sortByT4, sortByT5)
 else:
     st.code('Tekan tombol untuk menampilkan plot (Data tersedia April 2016 - Desember 2020)')
+
+st.caption('Zoom in pada plot menggunakan button yang tersedia di kanan atas plot untuk melihat panah arah angin dengan lebih jelas')
