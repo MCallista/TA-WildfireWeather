@@ -12,10 +12,6 @@ st.set_page_config(
 hsPlot = pd.read_csv('Visualization/hsPlot.csv', index_col=[0])
 hsPlotQ = pd.read_csv('Visualization/hsPlotQ.csv', index_col=[0])
 
-hsPlotQ['Hari'] = pd.to_datetime(hsPlotQ['Tanggal']).dt.day
-hsPlotQ['Bulan'] = pd.to_datetime(hsPlotQ['Tanggal']).dt.month_name(locale = 'English')
-hsPlotQ['Tahun'] = pd.to_datetime(hsPlotQ['Tanggal']).dt.year
-
 def hsHist(colName):
     fig, ax = plt.subplots()
     ax.hist(hsPlot[colName])
