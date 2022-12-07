@@ -5,4 +5,3 @@ datetime
 matplotlib
 seaborn
 plotly
-locale
