@@ -2,9 +2,7 @@ streamlit>=1.10.0
 pandas
 numpy
 datetime
-matplotlib.pyplot
+matplotlib
 seaborn
-plotly.figure_factory
-plotly.express
-plotly.graph_objects
+plotly
 
