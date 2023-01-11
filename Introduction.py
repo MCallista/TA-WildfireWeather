@@ -19,5 +19,3 @@ st.markdown(
     2. Visualisasi Hasil Prediksi Model
     '''
 )
-
-st.sidebar.success("Pilih halaman")
