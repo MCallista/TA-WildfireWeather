@@ -83,7 +83,7 @@ else:
 st.markdown('####')
 st.markdown('**Visualisasi lokasi kebakaran pada peta pulau Sumatera (temperatur, per hari)**')
 
-hsMVisT3 = px.scatter_geo(hsPlotT, lat = "Latitude", lon = "Longitude", color = "T2M", animation_frame = "Tanggal", opacity = 0.2)
+hsMVisT3 = px.scatter_geo(hsPlotT, lat = "Latitude", lon = "Longitude", color = "T2M", animation_frame = "Tanggal")
 hsMVisT3.add_traces(go.Scattergeo(lat=[-6,6], lon=[94,108], mode = 'markers', marker = dict(size = 2,color = 'rgba(0, 0, 0, 0)'), name='Sumatera'))
 hsMVisT3.update_geos(visible=True, resolution=50, scope="asia", fitbounds='locations', showcountries=True, countrycolor="Black", showsubunits=True, subunitcolor="grey")
 
